@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #fff;
+    background: linear-gradient(to bottom, #359184, #2e7d32);
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #a5d6a7;
+}
+
+.hero {
+    height: 100vh;
+    background: url('img_!.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    color: #e0f2f1;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: #b2dfdb;
+    margin-top: 10px;
+}
+
+section {
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.about, .gallery, .contact {
+    background: rgba(0, 0, 0, 0.3);
+    margin: 30px 0;
+    border-radius: 15px;
+}
+
+.gallery .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery .images img {
+    width: 300px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.gallery .images img:hover {
+    transform: scale(1.05);
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+.contact button {
+    padding: 12px;
+    background-color: #6de988;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #4e9e52;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
